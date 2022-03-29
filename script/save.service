@@ -1,0 +1,9 @@
+[Unit]
+Description=Save some useful informations in /srv/backup/
+
+[Service]
+ExecStart=/usr/bin/bash /srv/save.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
